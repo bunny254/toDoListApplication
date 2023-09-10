@@ -8,7 +8,7 @@ const TaskList = () => {
   });
   return (
     <div>
-      <div className="mt-8 flex flex-col justify-center items-center">{tasks}</div>
+      <div>{tasks}</div>
     </div>
   );
 };

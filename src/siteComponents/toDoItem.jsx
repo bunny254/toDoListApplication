@@ -5,23 +5,32 @@ import { delToDo, updateTodo } from "../actions";
 const ToDoItem = ({ task }) => {
   const dispatch = useDispatch();
   const [edit, setEdit] = useState();
+  const [done, setDone] = useState(false);
 
-  const handleTaskUpdate=(e)=>{
+  const handleTaskUpdate = (e) => {
     e.preventDefault();
-    if(e.target.updatedTask.value){
-        dispatch(updateTodo({id:task.id, newTask:e.target.updatedTask.value}))
+    if (e.target.updatedTask.value) {
+      dispatch(
+        updateTodo({ id: task.id, newTask: e.target.updatedTask.value })
+      );
     }
-    setEdit(false)
-  }
+    setEdit(false);
+  };
 
   if (!edit)
     return (
       <div>
-        {task.task}
-        <button onClick={() => dispatch(delToDo(task.id))}>Delete</button>
-        <button type="submit" onClick={() => setEdit(true)}>
-          Edit
-        </button>
+        <div onClick={() => setDone(!done)} className='select-none cursor-pointer w-full border-b p-3 flex justify-between items-center'>
+          <span className={`${done === true? 'line-through' : ''}`}>
+          {task.task}            
+            </span>    
+          <div className="flex gap-8">
+            <button type="submit" onClick={() => setEdit(true)}>
+              Edit
+            </button>
+            <button onClick={() => dispatch(delToDo(task.id))}>Delete</button>
+          </div>
+        </div>
       </div>
     );
   else

@@ -25,7 +25,7 @@ const AddTask = () => {
         />
 
         <button
-          className="cursor-pointer w-[50px] h-[50px] bg-[#e74c3c] text-white text-3xl rounded-[50%] flex justify-center items-center"
+          className="ml-1 cursor-pointer w-[50px] h-[50px] bg-[#e74c3c] text-white text-3xl rounded-[50%] flex justify-center items-center"
           type="submit"
         >
           <IoMdAdd/>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { delToDo, updateTodo } from "../actions";
+import {LiaEdit} from 'react-icons/lia';
+import {AiOutlineDelete} from 'react-icons/ai'
 
 const ToDoItem = ({ task }) => {
   const dispatch = useDispatch();
@@ -26,9 +28,9 @@ const ToDoItem = ({ task }) => {
             </span>    
           <div className="flex gap-8">
             <button type="submit" onClick={() => setEdit(true)}>
-              Edit
+              <LiaEdit size="24px"/>
             </button>
-            <button onClick={() => dispatch(delToDo(task.id))}>Delete</button>
+            <button onClick={() => dispatch(delToDo(task.id))}><AiOutlineDelete size="24px"/></button>
           </div>
         </div>
       </div>

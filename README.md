@@ -4,9 +4,9 @@ Find the production link:(Hosted with [Netlify]) (https://meek-cupcake-331547.ne
 
 ## Inspiration
 
-Planning your tasks ensures that you are staying on track with your goals and you can ensure that you become more task oriented. Planning also provides the framework for informed decision making. Finally, planning allows focus and personal energy direction.\
+Planning your tasks ensures that you are staying on track with your goals and you can ensure that you become more task oriented. Planning also provides the framework for informed decision making. Finally, planning allows focus and personal energy direction.
 
-Planning is important as it allows you to prioritize your work, get more done in less time, helps you to produce quality work and keeps as disciplined.\
+Planning is important as it allows you to prioritize your work, get more done in less time, helps you to produce quality work and keeps as disciplined.
 
 So why not digitize this and have an app that keeps track of your tasks.
 
@@ -17,7 +17,7 @@ Allows you to double click and mark task as completed.
 Allows you to delete tasks.
 
 ## How I built it
-Conceptualization: From the already defined core features and functionalities wanted.\
+Conceptualization: From the already defined core features and functionalities wanted.
 
 Frontend Development: Built using react (npx create-react-app) method as my quick go to as no API is required to serve the application with Next which offers powerful first to time byte respones.
 

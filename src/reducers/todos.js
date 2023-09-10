@@ -1,7 +1,10 @@
 import { ADD_TODO, DELETE_TODO, UPDATE_TODO } from "../actions/types"
 
+const tasks = localStorage.getItem('data') !== null ? JSON.parse(localStorage.getItem('data')):[];
+
+//Declaring Item's initial state
 const initialState ={
-    data:[],
+    data: tasks,
 }
 
 const todos = (state=initialState, action)=>{

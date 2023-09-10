@@ -10,6 +10,9 @@ function App() {
       <AddTask/>
       <TaskList/>
       </div>
+      <a className="flex justify-center items-center text-white text-xl font-bold mt-4 mb-2" href="https://www.simonwachira.com" target="_blank" rel="noreferrer">
+      <p className="italic">© BUILTBYSIMON</p>
+      </a>
       </div>
     </div>
   );

@@ -22,8 +22,8 @@ const ToDoItem = ({ task }) => {
   if (!edit)
     return (
       <div>
-        <div onClick={() => setDone(!done)} className='select-none cursor-pointer w-full border-b p-3 flex justify-between items-center'>
-          <span className={`${done === true? 'line-through' : ''}`}>
+        <div className='select-none cursor-pointer w-full border-b p-3 flex justify-between items-center'>
+          <span onClick={() => setDone(!done)} className={`${done === true? 'line-through' : ''}`}>
           {task.task}            
             </span>    
           <div className="flex gap-8">
